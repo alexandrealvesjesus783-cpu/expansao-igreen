@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Parceria Energia Sustentável</title>
 
 <!-- TAG GOOGLE ADS -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11190163063"></script>
 <script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'AW-11190163063');
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-11190163063/TeDSCN2W844cEPes8dcp',
+      'value': 1.0,
+      'currency': 'BRL',
+      'event_callback': callback
+  });
+  return false;
+}
 </script>
 
 <style>
@@ -88,8 +95,8 @@ Novos participantes sendo avaliados
 </p>
 
 <a class="botao" 
-href="https://wa.me/5562993210298?text=Olá,%20vi%20o%20anúncio%20e%20quero%20entender%20como%20funciona%20a%20parceria%20em%20energia%20sustentável"
-onclick="gtag('event','conversion',{'send_to':'AW-11190163063/wFILCJIpZTIzEPes8dep'});">
+<a href="https://wa.me/5562993210298"
+onclick="return gtag_report_conversion('https://wa.me/5562993210298');">
 Quero entender como funciona
 </a>
 
