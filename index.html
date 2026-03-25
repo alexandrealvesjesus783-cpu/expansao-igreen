@@ -94,10 +94,10 @@ Atuação com base em soluções utilizadas por empresas como a iGreen Energy no
 Novos participantes sendo avaliados
 </p>
 
-<a class="botao" 
+<a class=<!--BOTÃO WHATSAPP COM CONVERSÃO --> 
 <a href="https://wa.me/5562993210298"
 onclick="return gtag_report_conversion('https://wa.me/5562993210298');">
-Quero entender como funciona
+QUER ENTENDER COMO FUNCIONA 
 </a>
 
 </div>
@@ -150,6 +150,23 @@ Baseado em práticas do setor de energia sustentável, incluindo soluções util
 </footer>
 
 </div>
-
+<!-- EVENTO DE CONVERSÃO -->
+  <script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-11190163063/TeDSCN2W844cEPes8dcp',
+        'value': 1.0,
+        'currency': 'BRL',
+        'event_callback': callback
+    });
+    return false;
+  }
+  </script>
+  
 </body>
 </html>
